@@ -7,7 +7,7 @@ import model_3 from '../images/model-3.jpg';
 import model_x from '../images/model-x.jpg';
 import solar_panel from '../images/solar-panel.jpg';
 import solar_roof from '../images/solar-roof.jpg';
-import accessories from '../images/accessories.jpg'
+import accessories from '../images/accessories.jpg';
 
 
 function Home() {

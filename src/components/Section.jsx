@@ -1,20 +1,24 @@
 import React from 'react';
 import styled from 'styled-components';
-import model from '../images/model-s.jpg';
 import dowmarrow from '../images/down-arrow.svg';
+import Fade from 'react-reveal/Fade';
 
 function Section({title, desc, leftButton, rightButton, backgroundImg}) {
     return (
         <Wrap bgImg ={backgroundImg}>
+            <Fade bottom>
             <ItemText>
                 <h1>{title}</h1>
                 <p>{desc}</p>
             </ItemText>
+            </Fade>
             <Buttons>
+            <Fade bottom>
             <ButtonGroup>
                 <LeftButton>{leftButton}</LeftButton>
                 {rightButton && <RightButton>{rightButton}</RightButton> }
             </ButtonGroup>
+            </Fade>
             <DownArrow src={dowmarrow} />
             </Buttons>
         </Wrap>
